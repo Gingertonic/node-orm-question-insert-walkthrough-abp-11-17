@@ -18,15 +18,15 @@ class Question{
     this.content = content
   }
 
-  static insert(instance) {
-    var self = instance;
-    return new Promise(function(resolve) {
-      db.run(this, function(){
-        self.id = this.id
-        resolve (self)
-       }
-      })
-    })
+  insert(instance) {
+    // var self = instance;
+    // return new Promise(function(resolve) {
+    //   db.run(this, function(){
+    //     self.id = this.id
+    //     resolve (self)
+    //    }
+    //   })
+    // })
   }
 
 }
