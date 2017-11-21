@@ -20,11 +20,11 @@ class Question{
 
   insert(instance) {
     // var self = instance;
-    // return new Promise(function(resolve) {
+    return new Promise(function(resolve) {
     //   db.run(this, function(){
     //     self.id = this.id
-    //     resolve (self)
-    //    }
+        resolve (self)
+       }
     //   })
     // })
   }
