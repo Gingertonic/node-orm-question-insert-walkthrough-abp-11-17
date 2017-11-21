@@ -18,12 +18,15 @@ class Question{
     this.content = content
   }
 
-  insert(instance) {
+  insert() {
     // var self = instance;
+    const sql = `INSERT INTO questions (content) VALUES (?)`
     return new Promise(function(resolve) {
-    //   db.run(this, function(){
-    //     self.id = this.id
+    db.run(sql, [this.content], function (err, result){
         resolve (self)
+    })
+    //     self.id = this.id
+
       })
     //   })
     // })
