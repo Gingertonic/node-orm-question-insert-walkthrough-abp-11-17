@@ -24,11 +24,11 @@ class Question{
     //   db.run(this, function(){
     //     self.id = this.id
         resolve (self)
-       }
+      })
     //   })
     // })
   }
 
-}
+
 
 module.exports = Question;
